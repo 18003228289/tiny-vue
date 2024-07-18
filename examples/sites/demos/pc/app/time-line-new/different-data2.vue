@@ -1,14 +1,15 @@
 <template>
-  <aui-time-line :data="data" auto-color-field="color1" vertical :active="active" @click="click"></aui-time-line>
+  <tiny-time-line :data="data" auto-color-field="color1" vertical :active="active" @click="click"></tiny-time-line>
 </template>
 
 <script>
-import { TimeLineNew, Modal } from '@opentiny/vue'
+import { Modal } from '@opentiny/vue'
+import TimeLineNew from '@opentiny/vue-time-line-new'
 import { IconLoading } from '@opentiny/vue-icon'
 
 export default {
   components: {
-    AuiTimeLine: TimeLineNew
+    TinyTimeLine: TimeLineNew
   },
   data() {
     return {

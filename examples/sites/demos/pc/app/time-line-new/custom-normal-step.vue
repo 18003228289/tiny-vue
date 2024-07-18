@@ -1,20 +1,21 @@
 <template>
-  <aui-time-line :data="data" :active="active" @click="click">
+  <tiny-time-line :data="data" :active="active" @click="click">
     <template #top="data">
       <p style="text-align: center">{{ data.slotScope.name }}</p>
     </template>
     <template #bottom="data">
       <p>{{ data.slotScope.time }}</p>
     </template>
-  </aui-time-line>
+  </tiny-time-line>
 </template>
 
 <script>
-import { TimeLineNew, Modal } from '@opentiny/vue'
+import { Modal } from '@opentiny/vue'
+import TimeLineNew from '@opentiny/vue-time-line-new'
 
 export default {
   components: {
-    AuiTimeLine: TimeLineNew
+    TinyTimeLine: TimeLineNew
   },
   data() {
     return {

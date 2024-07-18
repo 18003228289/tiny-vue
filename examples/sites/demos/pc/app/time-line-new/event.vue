@@ -1,13 +1,14 @@
 <template>
-  <aui-time-line :data="data" :active="active" @click="click" vertical reverse></aui-time-line>
+  <tiny-time-line :data="data" :active="active" @click="click" vertical reverse></tiny-time-line>
 </template>
 
 <script>
-import { TimeLineNew, Modal } from '@opentiny/vue'
+import { Modal } from '@opentiny/vue'
+import TimeLineNew from '@opentiny/vue-time-line-new'
 
 export default {
   components: {
-    AuiTimeLine: TimeLineNew
+    TinyTimeLine: TimeLineNew
   },
   data() {
     return {
